@@ -1,0 +1,149 @@
+
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+    font-family: Arial, serif;
+    background-color: #4141da;
+}
+
+ul.menu li{
+    display: inline;
+    margin: 20px;
+}
+ul.menu li a{
+    color: #deb61b;
+}
+.menu{
+    text-align: center;
+}
+
+h1.name{
+    color: #f57800;
+    font-size: x-large;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+h2{
+    color: #d57200;
+    font-size: large;
+    font-weight: bold;
+}
+
+.contacts li{
+    display: inline;
+}
+
+.contacts li a{
+    color: #030273;
+}
+
+code{
+    color: aliceblue;
+}
+
+ul{
+    list-style-image: url(/img/fingerIcon.png);
+}
+
+ol {
+    counter-reset:li;
+}
+
+ol li {
+    position:relative;
+    margin:0 0 6px 2em;
+    padding:4px 8px;
+    border-top:2px solid #deb61b;
+    background: #ff8209;
+}
+
+ol li:before {
+    content:counter(li); /* В качестве данных используем счетчик */
+    counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+    /* Позиционируем и оформляем цифры */
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    width:2em;
+    padding:4px 0;
+    border-top:2px solid #deb61b;
+    color: #ff8209;
+    background: #deb61b;
+    font-weight:bold;
+    font-family: Arial, sans-serif;
+    text-align:center;
+}
+
+dl {
+    margin-bottom:50px;
+}
+
+dl dt {
+    font-size: 15px;
+    float:left;
+    margin-right:10px;
+    padding:5px;
+    width:100px;
+}
+
+dl dd {
+    margin:2px 0;
+    padding:5px 0;
+    font-size: 10px;
+}
+
+#my_failures dl{
+    color: #0038ff;
+    background: #6299fd;
+}
+
+#my_animal{
+    color: white;
+    background: #093886;
+    box-shadow: 0 0 5px 2px;
+
+}
+
+q{
+    font-style: italic;
+    color: white;
+    margin: 15px;
+}
