@@ -147,3 +147,11 @@ q{
     color: white;
     margin: 15px;
 }
+
+#success_formula span{
+    color: white;
+}
+
+#success_formula span sup{
+    font-style: italic;
+}
