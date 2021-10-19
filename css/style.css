@@ -59,6 +59,7 @@ h1.name{
     font-size: x-large;
     font-style: oblique;
     font-weight: bolder;
+    float: top;
 }
 
 h2{
@@ -96,9 +97,8 @@ ol li {
 }
 
 ol li:before {
-    content:counter(li); /* В качестве данных используем счетчик */
-    counter-increment:li; /* Увеличиваем значение счетчика на 1 */
-    /* Позиционируем и оформляем цифры */
+    content:counter(li);
+    counter-increment:li;
     position:absolute;
     top:-2px;
     left:-2em;
@@ -131,15 +131,14 @@ dl dd {
 }
 
 #my_failures dl{
-    color: #0038ff;
-    background: #6299fd;
+    color: #120ee3;
+    background: #85a5e8;
 }
 
 #my_animal{
     color: white;
     background: #093886;
     box-shadow: 0 0 5px 2px;
-
 }
 
 q{
@@ -154,4 +153,29 @@ q{
 
 #success_formula span sup{
     font-style: italic;
+}
+#about_me img{
+    margin: 5%;
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+#about_me{
+    margin-bottom: 10px;
+
+}
+header{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+footer{
+    margin-top: 15px;
+    font-size: 10px;
+    border-width: medium;
+    border-top: 4px solid #fcff19;
+    text-align: right;
+}
+
+footer h2{
+    font-size: 14px;
+    color: #c9cc4f;
 }
