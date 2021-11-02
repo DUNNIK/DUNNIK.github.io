@@ -40,16 +40,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 body{
     font-family: Arial, serif;
-    background-color: #4141da;
+    background-color: #2a2ad0;
+    line-height: 27px;
 }
 
 ul.menu li{
     display: inline;
     margin: 20px;
+    font-weight: 600;
 }
+
 ul.menu li a{
     color: #deb61b;
 }
+
 .menu{
     text-align: center;
 }
@@ -60,6 +64,7 @@ h1.name{
     font-style: oblique;
     font-weight: bolder;
     float: top;
+    text-transform: uppercase;
 }
 
 h2{
@@ -78,10 +83,6 @@ h2{
 
 code{
     color: aliceblue;
-}
-
-ul{
-    list-style-image: url(/img/fingerIcon.png);
 }
 
 ol {
@@ -104,7 +105,6 @@ ol li:before {
     left:-2em;
     width:2em;
     padding:4px 0;
-    border-top:2px solid #deb61b;
     color: #ff8209;
     background: #deb61b;
     font-weight:bold;
@@ -144,7 +144,7 @@ dl dd {
 q{
     font-style: italic;
     color: white;
-    margin: 15px;
+    margin-left: 15px;
 }
 
 #success_formula span{
@@ -154,14 +154,17 @@ q{
 #success_formula span sup{
     font-style: italic;
 }
+
 #about_me img{
     margin: 5%;
     box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
 }
+
 #about_me{
     margin-bottom: 10px;
 
 }
+
 header{
     margin-bottom: 15px;
     text-align: center;
@@ -178,4 +181,31 @@ footer{
 footer h2{
     font-size: 14px;
     color: #c9cc4f;
+}
+
+.eating {
+    text-decoration: line-through;
+}
+
+pre,
+code {
+    background-color: #14139b;
+    border: 1px solid #fff0f4;
+    border-radius: 4px;
+    color: #fff0f4;
+    font-family: "Courier New", "Courier", monospace;
+}
+
+pre {
+    padding: 5px;
+}
+
+code {
+    padding: 2px 5px;
+}
+
+pre code {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
 }
