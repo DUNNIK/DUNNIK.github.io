@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Дунаев Никита М33051</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/outline-prototype-safe.css">
 </head>
 <body>
 <header>
-
     <nav>
-        <ul class="menu">
+        <ul class="header__menu">
             <li><a href="#about_me">Представление</a></li>
             <li><a href="#my_code">Пример кода</a></li>
             <li><a href="#my_achievements">Достижения</a></li>
@@ -19,24 +19,34 @@
             <li><a href="#success_formula">Формула успеха</a></li>
         </ul>
     </nav>
-    <section id="about_me">
-        <img src=/img/ава.jpg alt="аватарка" width="189" height="255">
-        <h1 class="name">Дунаев Никита Сергеевич</h1>
-        <h2>Мои контакты</h2>
-        <ul class="contacts">
-            <li><a href="https://vk.com/dunn1">Вконтакте</a></li>
-            <li><a href="https://www.instagram.com/_dunnik">Инстаграм</a></li>
-            <li><a href="https://t.me/dunaevnikita">Телеграм</a></li>
-            <li><a href="https://github.com/DUNNIK">GitHub</a></li>
-        </ul>
+
+    <section id="about_me" class="header__about_me">
+        <div class="header__logo">
+            <img src=/img/ава.jpg alt="аватарка" width="189" height="255">
+        </div>
+        <div class="header__text">
+            <div class="header__name">
+                <h1 class="name">Дунаев Никита Сергеевич</h1>
+            </div>
+            <div class="header__contacts">
+                <h2>Мои контакты</h2>
+                <ul class="contacts">
+                    <li><a href="https://vk.com/dunn1">Вконтакте</a></li>
+                    <li><a href="https://www.instagram.com/_dunnik">Инстаграм</a></li>
+                    <li><a href="https://t.me/dunaevnikita">Телеграм</a></li>
+                    <li><a href="https://github.com/DUNNIK">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
+
 </header>
 <main>
 
-    <section id="my_code">
+    <section id="my_code" class="main__my_code">
         <h2>Мой код</h2>
 
-            <pre>
+        <pre>
                 <code>
     package com.itmo.java.basics.logic.impl;
 
@@ -160,35 +170,44 @@
             </code>
             </pre>
     </section>
-    <section id="my_achievements">
+    <section id="my_achievements" class="main__my_achievements">
         <h2>Достижения</h2>
-        <article>
-            <ol>
-                <li>
-                    <dl>
-                        <dt>Я доучился до третьего курса</dt>
-                        <dd>Без троек и долгов</dd>
-                    </dl>
-                </li>
-                <li class="eating">Хорошо покушал</li>
-            </ol>
-        </article>
+        <div class="main__my_achievements__article">
+            <article>
+                <ol>
+                    <li>
+                        <dl>
+                            <dt class="main__third_course">Я доучился до третьего курса</dt>
+                            <dd class="main__without_bad_marks">Без троек и долгов</dd>
+                        </dl>
+                    </li>
+                    <li class="eating">Хорошо покушал</li>
+                </ol>
+            </article>
+        </div>
     </section>
-    <section id="my_failures">
+    <section id="my_failures" class="main__my_failures">
         <h2>Провалы</h2>
-            <dl>
-                <dt>Не путешествую</dt>
-                <dd>
-                    <dl>
-                        <dt>Да, можно найти много отговорок</dt>
-                        <dd>Но тот, кто хочет, всегда найдет как</dd>
-                    </dl>
-                </dd>
-            </dl>
+        <dl>
+            <dt>Не путешествую</dt>
+            <dd>
+                <dl>
+                    <dt>Да, можно найти много отговорок</dt>
+                    <dd>Но тот, кто хочет, всегда найдет как</dd>
+                </dl>
+            </dd>
+        </dl>
     </section>
     <section id="my_animal">
         <h2>Мое животное</h2>
-				<pre>
+        <div class="main__real_animal">
+        <div class="main__real_volf">
+            <img src=/img/volf.jpg alt="волк" width="189" height="255">
+        </div>
+            <p>настоящий волк</p>
+        </div>
+        <div class="main__volf">
+            <pre>
 
                             .d$$b
                           .' TO$;\
@@ -217,6 +236,7 @@
                            ;  bug
 
                 </pre>
+        </div>
     </section>
     <section id="favorite_quote">
         <h2>Моя любимая цитата</h2>
@@ -228,15 +248,13 @@
     </section>
 </main>
 <footer id="footer">
-        <aside>
-            <h2>Мои контакты</h2>
-            <ul class="contacts">
-                <li><a href="https://vk.com/dunn1">Вконтакте</a></li>
-                <li><a href="https://www.instagram.com/_dunnik">Инстаграм</a></li>
-                <li><a href="https://t.me/dunaevnikita">Телеграм</a></li>
-                <li><a href="https://github.com/DUNNIK">GitHub</a></li>
-            </ul>
-        </aside>
+    <h2>Мои контакты</h2>
+    <ul class="contacts">
+        <li><a href="https://vk.com/dunn1">Вконтакте</a></li>
+        <li><a href="https://www.instagram.com/_dunnik">Инстаграм</a></li>
+        <li><a href="https://t.me/dunaevnikita">Телеграм</a></li>
+        <li><a href="https://github.com/DUNNIK">GitHub</a></li>
+    </ul>
 </footer>
 </body>
 </html>
