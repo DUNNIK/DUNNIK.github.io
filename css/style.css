@@ -118,6 +118,9 @@ ol li:before {
     text-align:center;
 }
 
+ol li::content{
+    align-content: center;
+}
 dl {
     margin-bottom:50px;
 }
@@ -230,7 +233,6 @@ pre code {
     left: 1px;
     right: 1px;
     bottom: 1000px;
-
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -282,4 +284,8 @@ pre code {
 
 .main__volf{
     display: flex;
+}
+
+body {
+    font-family: "Lato", sans-serif;
 }
