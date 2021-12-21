@@ -96,12 +96,21 @@ class TodoList {
     }
 
     addNewTask(content) {
-        this.storage.setTask(content, "undone");
+        try {
+            this.storage.setTask(content, "undone");
+        } catch (error) {
+            alert('невозможно выполнить операцию сохранения задачи!');
+        }
     }
 
     printTaskList() {
         this.todoListHtml.innerHTML = "";
-        let taskList = this.storage.getTaskList();
+        let taskList
+        try {
+            taskList = this.storage.getTaskList();
+        } catch (error) {
+            alert('невозможно спарсить задачи!');
+        }
         for (let i = 0; i < this.storage.getLength(); i++){
             let taskWithId = taskList[i];
             let taskHtml = this.createTaskHtml(taskWithId.task.content, taskWithId.task.status, taskWithId.id);
@@ -145,14 +154,24 @@ class TodoList {
     startListenClicksOnTasks() {
         function listener (e) {
             let li = e.target
-            let task = TodoList.currentTodoList.storage.getTask(li.id)
+            let task
+            try {
+                task = TodoList.currentTodoList.storage.getTask(li.id)
+            } catch (error) {
+                alert('невозможно спарсить задачу!');
+            }
+
             if (task.status === "undone"){
                 task.status = "done";
             }
             else {
                 task.status = "undone";
             }
-            TodoList.currentTodoList.storage.setTaskById(li.id, task.content, task.status);
+            try {
+                TodoList.currentTodoList.storage.setTaskById(li.id, task.content, task.status);
+            } catch (error) {
+                alert('невозможно выполнить операцию сохранения задачи!');
+            }
             TodoList.currentTodoList.printTaskList();
         }
         this.todoListHtml.addEventListener('click',listener);
